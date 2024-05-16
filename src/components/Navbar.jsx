@@ -1,11 +1,9 @@
 import { Link } from 'react-router-dom';
 import { FaLink } from 'react-icons/fa';
 
-export default function Navbar({ prop}) {
-  
-
+export default function Navbar({ prop }) {
   return (
-    <nav  className="bg-gray-800 p-6 flex justify-between items-center" style={prop ? { position: 'absolute', top: 0, left: 0, right: 0, zIndex: 5, background: "transparent" } : null}>
+    <nav className={`fixed top-0 left-0 right-0 z-50 bg-gray-800 p-6 flex justify-between items-center ${prop ? 'bg-transparent fixed top-0 left-0 right-0 z-50' : ''}`}>
       <div className="flex items-center">
         <FaLink className="text-white text-4xl mr-2" />
         <h1 className="text-white text-3xl font-bold font-montserrat">Shopify +</h1>
@@ -16,7 +14,7 @@ export default function Navbar({ prop}) {
           <Link to="/" className="text-white hover:text-gray-300 text-lg text-center">
             Home
           </Link>
-          <Link to="/Products" className="text-white hover:text-gray-300 text-lg text-center">
+          <Link to="/" className="text-white hover:text-gray-300 text-lg text-center">
             Online stores
           </Link>
           <Link to="/Contact" className="text-white hover:text-gray-300 text-lg text-center">
