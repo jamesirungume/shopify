@@ -1,13 +1,12 @@
-import { useState } from 'react'
-import { Link ,useNavigate} from 'react-router-dom';
-
+import React from 'react';
 
 export default function Footer() {
   return (
-    <div> 
-      <Link to="/" className="text-3xl font-bold underline">
-        Home
-      </Link>
-    </div>
-  )
+    <footer className=" w-full bg-blue-900 text-white py-6">
+      <div className="container mx-auto text-center">
+        <p className="text-sm">&copy; 2024 Shopify+. All rights reserved.</p>
+        <p className="text-sm">Designed and Developed by Your Company</p>
+      </div>
+    </footer>
+  );
 }

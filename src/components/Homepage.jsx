@@ -5,6 +5,7 @@ import { FaArrowRightLong } from 'react-icons/fa6';
 import { shirtsData, sweatpantsData, tShirtsData, tracksuitsData, jeansData, suitsData, accessoriesData, outerwearData, outfitsData, shoesData } from './FakeData';
 import { Link } from 'react-router-dom';
 import {storesData} from './FakeData2';
+import Footer from './Footer'
 
 
 export default function Homepage() {
@@ -68,7 +69,7 @@ export default function Homepage() {
   return (
     <>
       <Navbar prop={!isScrolled}  /> {/* Pass the inverse of isScrolled to the prop */}
-      <div style={{ maxHeight: '100vh' }}>
+      <div style={{ minHeight: '100vh' }}>
         <div className="relative w-screen h-[90vh]">
           <img src={Home} alt="My Image" className="absolute inset-0 w-full h-full object-cover" />
           <div className="absolute inset-0 flex flex-col justify-center items-center">
@@ -150,6 +151,7 @@ export default function Homepage() {
           
         </div>
       </div>
+      <Footer/>
       
     </>
   );

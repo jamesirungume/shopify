@@ -20,7 +20,7 @@ export default function App() {
           <Route path="/Login" element={<Login/>} />
           <Route path="/Products" element={<Products/>} />
           <Route path="/Onlinestores" element={<Onlinestores/>} />
-       
+          <Route path="/1" element={<Footer/>} />
         </Routes>
       </BrowserRouter>
     
