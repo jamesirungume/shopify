@@ -14,7 +14,7 @@ export default function Navbar({ prop }) {
           <Link to="/" className="text-white hover:text-gray-300 text-lg text-center">
             Home
           </Link>
-          <Link to="/" className="text-white hover:text-gray-300 text-lg text-center">
+          <Link to="/Onlinestores" className="text-white hover:text-gray-300 text-lg text-center">
             Online stores
           </Link>
           <Link to="/Contact" className="text-white hover:text-gray-300 text-lg text-center">

@@ -110,8 +110,8 @@ export default function Products() {
 
   return (
     <div className="relative">
-      <Navbar prop={false} className="fixed top-0 w-full"/>
-      <div className="flex justify-center mt-9">
+      <Navbar prop={false} />
+      <div className="flex justify-center relative top-24 left-0 right-0 bottom-0">
         <div className="relative">
           <FaSearch className="absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-400" />
           <input
@@ -169,7 +169,7 @@ export default function Products() {
             </ul>
           </div>
         </aside>
-        <div className="p-4 ml-64 overflow-y-auto" style={{ maxHeight: 'calc(100vh - 64px)', display: 'flex', flexWrap: 'wrap' }}>
+        <div className="p-4 ml-64 mt-20 overflow-y-auto" style={{ maxHeight: 'calc(100vh - 64px) ', display: 'flex', flexWrap: 'wrap' }}>
          <p className="text-center mt-2 text-3xl font-bold mb-8 ml-20 text-blue-700 font-serif">Tap on a product to add to cart and compare it to similar products from different stores.</p>
 
           <div className="p-1 border-2 border-gray-200 border-dashed rounded-lg dark:border-gray-700" style={{ display: 'flex', flexWrap: 'wrap' }}>

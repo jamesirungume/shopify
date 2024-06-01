@@ -7,6 +7,7 @@ import Aboutus from './components/Aboutus';
 import Cart from './components/Cart';
 import Footer from './components/Footer';
 import  Login from './components/Login';
+import  Onlinestores from './components/Onlinestores';
 
 export default function App() {
   return (
@@ -18,6 +19,7 @@ export default function App() {
           <Route path="/Cart " element={<Cart />} />
           <Route path="/Login" element={<Login/>} />
           <Route path="/Products" element={<Products/>} />
+          <Route path="/Onlinestores" element={<Onlinestores/>} />
        
         </Routes>
       </BrowserRouter>

@@ -4,6 +4,8 @@ import Home from './Images/Home.png';
 import { FaArrowRightLong } from 'react-icons/fa6';
 import { shirtsData, sweatpantsData, tShirtsData, tracksuitsData, jeansData, suitsData, accessoriesData, outerwearData, outfitsData, shoesData } from './FakeData';
 import { Link } from 'react-router-dom';
+import {storesData} from './FakeData2';
+
 
 export default function Homepage() {
   const [isScrolled, setIsScrolled] = useState(false); // State to track scroll
@@ -113,6 +115,38 @@ export default function Homepage() {
               </div>
             ))}
           </div>
+          
+          
+        </div>
+
+        <div style={{ padding: '15px' }}>
+          <div className='flex justify-between'>
+            <h1 className="text-xl text-black font-semibold hover:text-gray-700 hover:text-gray-500 underline cursor-pointer ">
+            HIgh Ranked  Stores
+            </h1>
+            <div className="flex items-center">
+              <Link to="/Products" className="text-xl text-black font-semibold hover:text-gray-700 hover:text-gray-500 underline cursor-pointer">
+                All Stores
+              </Link>
+              <FaArrowRightLong className="text-gray-700 text-lg hover:text-gray-500 ml-2 w-9 h-6" />
+            </div>
+          </div>
+          <div className='p-2 border-2 border-gray-200 border-dashed rounded-lg dark:border-gray-700' style={{ display: 'flex', flexWrap: 'wrap', maxWidth: '80%', margin: '20px auto' }}>
+            {storesData.stores.map(store => (
+              <div key={store.id} style={{ flexBasis: '25%', padding: '6px', textAlign: 'start', position: 'relative' }}>
+                <img src={store.image_url} alt={store.name} style={{ maxWidth: '100%', height: 'auto', maxHeight: '250px', minHeight: '210px', minWidth: '280px', objectFit: 'cover' }} />
+               
+                <div className="p-3">
+                  <p className="text-xl text-black font-semibold hover:text-gray-700">{store.name}</p>
+                  <p className="text-gray-700 text-lg hover:text-gray-500">Location: {store.location}</p>
+                  
+                  
+                 
+                </div>
+              </div>
+            ))}
+          </div>
+          
           
         </div>
       </div>
