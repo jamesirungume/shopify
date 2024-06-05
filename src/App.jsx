@@ -8,6 +8,7 @@ import Cart from './components/Cart';
 import Footer from './components/Footer';
 import  Login from './components/Login';
 import  Onlinestores from './components/Onlinestores';
+import ProductDetail from './components/ProductDetail';
 
 export default function App() {
   return (
@@ -19,6 +20,7 @@ export default function App() {
           <Route path="/Cart " element={<Cart />} />
           <Route path="/Login" element={<Login/>} />
           <Route path="/Products" element={<Products/>} />
+          <Route path="/products/:productId" element={<ProductDetail/>} />
           <Route path="/Onlinestores" element={<Onlinestores/>} />
           <Route path="/1" element={<Footer/>} />
         </Routes>

@@ -2,7 +2,7 @@ import { useState, useEffect } from 'react';
 import Navbar from './Navbar';
 import Home from './Images/Home.png';
 import { FaArrowRightLong } from 'react-icons/fa6';
-import { shirtsData, sweatpantsData, tShirtsData, tracksuitsData, jeansData, suitsData, accessoriesData, outerwearData, outfitsData, shoesData } from './FakeData';
+import {allProductsData} from './FakeData';
 import { Link } from 'react-router-dom';
 import {storesData} from './FakeData2';
 import Footer from './Footer'
@@ -29,18 +29,7 @@ export default function Homepage() {
     };
   }, []); // Empty dependency array to ensure effect runs only once on mount
 
-  const allProductsData = [
-    ...shirtsData,
-    ...sweatpantsData,
-    ...tShirtsData,
-    ...tracksuitsData,
-    ...jeansData,
-    ...suitsData,
-    ...accessoriesData,
-    ...outerwearData,
-    ...outfitsData,
-    ...shoesData
-  ];
+ 
   const highRankingProducts = allProductsData.filter(product => product.Ranking === 'High');
   const renderQualityTag = (quality) => {
     let tagColor;

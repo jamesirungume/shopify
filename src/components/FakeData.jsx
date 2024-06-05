@@ -521,4 +521,17 @@ export const shirtsData = [
       quality: "standard"
     }
   ];
+
+  export  const allProductsData = [
+    ...shirtsData,
+    ...sweatpantsData,
+    ...tShirtsData,
+    ...tracksuitsData,
+    ...jeansData,
+    ...suitsData,
+    ...accessoriesData,
+    ...outerwearData,
+    ...outfitsData,
+    ...shoesData
+  ];
   
