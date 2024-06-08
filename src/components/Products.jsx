@@ -103,7 +103,7 @@ export default function Products() {
   
       <div className="relative">
         <Navbar prop={false} />
-        <div className="flex justify-center relative top-24 left-0 right-0 bottom-0">
+        <div className="flex justify-center relative top-24 left-0 right-0 ">
           <div className="relative">
             <FaSearch className="absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-400" />
             <input
