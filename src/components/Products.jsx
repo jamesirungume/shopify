@@ -70,7 +70,7 @@ export default function Products() {
         setProductsData(shoesData); // Added case for shoes
         break;
       default:
-        setProductsData([]);
+        setProductsData(shoesData);
         break;
     }
   };
@@ -125,7 +125,7 @@ export default function Products() {
         <div className="overflow-hidden mt-16">
           <aside id="sidebar-multi-level-sidebar" className="fixed top-16 left-0 z-40 w-64 h-full bg-gray-50 dark:bg-gray-800 overflow-y-auto mt-6">
             <div className="h-full px-3 py-4 overflow-y-auto font-serif">
-              <h1 className="text-2xl font-bold mb-4">Categories</h1>
+              <h1 className="text-3xl font-bold mb-4">Categories</h1>
               <ul className="list-disc pl-6">
                 <li className="mb-2">
                   <button onClick={() => handleCategoryClick('shoes')} className="text-black text-xl hover:text-blue-600">Shoes</button>

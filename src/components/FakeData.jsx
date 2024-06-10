@@ -443,34 +443,38 @@ export const shirtsData = [
   ];
   export const shoesData = [
     {
-        id: 59,
-        name: "Jordan 4's",
-        image: "https://fastsole.co.uk/wp-content/uploads/2021/10/Air-Jordan-4-White-Tech-Grey-CU9981-100.jpg",
-        price: "$79.99",
-        store: "Nike",
-        quality: "standard",
-        Ranking: "High"
-     },
-      {
-        id: 60,
-        name: "Jordan 11's",
-        image: "https://media.blackandwhite-ff.com/10000/7f7a3724-bf7a-44f8-9771-51ab81fae2ce_000-top-hero.jpg",
-        price: "$79.99",
-        store: "Nike",
-        quality: "Premium",
-        Ranking: "High"
-      },
-      
-      {
-        id: 61,
-        name: "Travis Scott x Nike Air Jordan",
-        image: "https://i.pinimg.com/564x/a0/fc/71/a0fc71af7d81dc7f2ca121616c235e65.jpg",
-        price: "$79.99",
-        store: "Nike",
-        quality: "standard",
-        Ranking: "High"
-      },
-
+      id: 59,
+      name: "Jordan 4's",
+      image: "https://fastsole.co.uk/wp-content/uploads/2021/10/Air-Jordan-4-White-Tech-Grey-CU9981-100.jpg",
+      price: "$79.99",
+      store: "Nike",
+      quality: "standard",
+      Ranking: "High",
+      description: "The Air Jordan 4 is a timeless classic, known for its iconic design and comfort. Featuring a combination of leather and mesh materials, it provides durability and breathability. Whether you're on the court or hitting the streets, these sneakers deliver style and performance.",
+      Type: "jordan 4"
+    },
+    {
+      id: 60,
+      name: "Jordan 11's",
+      image: "https://media.blackandwhite-ff.com/10000/7f7a3724-bf7a-44f8-9771-51ab81fae2ce_000-top-hero.jpg",
+      price: "$79.99",
+      store: "Nike",
+      quality: "Premium",
+      Ranking: "High",
+      Type:"jordan 11",
+      description: "The Air Jordan 11 is a premium sneaker designed for ultimate style and comfort. Featuring a patent leather upper and responsive cushioning, it offers a luxurious feel with every step. Whether you're on or off the court, these sneakers make a bold statement."
+    },
+    {
+      id: 61,
+      name: "Travis Scott x Nike Air Jordan",
+      image: "https://i.pinimg.com/564x/a0/fc/71/a0fc71af7d81dc7f2ca121616c235e65.jpg",
+      price: "$79.99",
+      store: "Nike",
+      quality: "standard",
+      Ranking: "High",
+      Type:"Travis scott x nike air jordan",
+      description: "The Travis Scott x Nike Air Jordan collaboration combines iconic design with unique flair. Featuring Travis Scott's signature details and premium materials, these sneakers offer style and comfort in one package. Whether you're a fan of Travis Scott or a sneaker enthusiast, these kicks are a must-have."
+    },
     {
       id: 62,
       name: "Running Shoes",
@@ -478,7 +482,8 @@ export const shirtsData = [
       price: "$79.99",
       store: "Nike",
       quality: "Premium",
-      
+      Type:"Running shoe",
+      description: "Designed for the dedicated runner, these premium running shoes offer superior performance and comfort. With responsive cushioning and a lightweight construction, they help you go the distance with ease. Whether you're training for a marathon or hitting the trails, these shoes are your perfect companion."
     },
     {
       id: 63,
@@ -486,7 +491,9 @@ export const shirtsData = [
       image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSFJ_49aHEHJg8df0rA-2gFtTt5wxteRej_HQ&s",
       price: "$59.99",
       store: "Adidas",
-      quality: "standard"
+      quality: "standard",
+      Type:"converse",
+      description: "These casual sneakers combine style and comfort for everyday wear. With a versatile design and durable construction, they're perfect for running errands or hanging out with friends. Add a touch of sporty flair to your look with these classic kicks."
     },
     {
       id: 64,
@@ -494,7 +501,9 @@ export const shirtsData = [
       image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR2FHVt8DdjJf88C40SA2yKn1TkmNnts1gw3g&s",
       price: "$99.99",
       store: "Cole Haan",
-      quality: "Premium"
+      quality: "Premium",
+      Type:"Magnani",
+      description: "Elevate your formal attire with these premium dress shoes. Crafted from high-quality leather and featuring elegant detailing, they exude sophistication and style. Whether you're attending a wedding or a business meeting, these shoes are sure to make a statement."
     },
     {
       id: 65,
@@ -502,26 +511,23 @@ export const shirtsData = [
       image: "https://www.prsnlplg.com/cdn/shop/products/DES1_1800x1800.jpg?v=1632591894",
       price: "$39.99",
       store: "Birkenstock",
-      quality: "standard"
+      quality: "standard",
+      Type:"yeezy slides",
+      description: "Slide into comfort and style with these Yeezy slides. Designed by Kanye West, these sandals feature a minimalist design and lightweight construction. Whether you're lounging at home or hitting the beach, these slides offer effortless cool."
     },
-    {
-      id: 66,
-      name: "Loafers",
-      image: "https://www.melvin-hamilton.com/cdn/shop/articles/AW22_-_clive_1_header.jpg?v=1674664624",
-      price: "$129.99",
-      store: "Merrell",
-      quality: "Premium"
-    },
+    
     {
       id: 67,
       name: "Loafers",
       image: "https://via.placeholder.com/250",
       price: "$89.99",
       store: "Sperry",
-      quality: "standard"
+      quality: "standard",
+      Type:"clarks loafer",
+      description: "Add a touch of sophistication to your wardrobe with these classic loafers. With a comfortable fit and versatile design, they're perfect for everyday wear. Whether you're heading to the office or meeting friends for brunch, these loafers keep you looking sharp."
     }
   ];
-
+  
   export  const allProductsData = [
     ...shirtsData,
     ...sweatpantsData,
