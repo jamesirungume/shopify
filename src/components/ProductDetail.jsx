@@ -3,60 +3,53 @@ import { useParams } from 'react-router-dom';
 import Navbar from './Navbar';
 import { FaCartArrowDown } from "react-icons/fa";
 
-export default function ProductDetail() {
-    let { productId } = useParams();
 
+export default function ProductDetail() {
+    let { productId } = useParams(); // Get the product ID from route parameters
+  
+    // Function to get product details by ID
     const getProductById = (id) => {
+        // Find the product in the allProductsData array by ID
         return allProductsData.find(product => product.id === parseInt(id));
     };
-
+  
+    // Fetch the product details
     const product = getProductById(productId);
-
+  
+    // Function to add product to cart
     const addToCart = (product) => {
+        // Implement your logic to add the product to the cart
         console.log('Product added to cart:', product);
     };
-
+  
     if (!product) {
-        return <div className="text-center text-lg text-red-600">Product not found</div>;
+        return <div>Product not found</div>;
     }
-
+  
     return (
-        <div className="bg-gray-100 min-h-screen">
-            <Navbar />
+        <div style={{ backgroundColor: '#f5f5f5' }}>
+        <Navbar/>
+          <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', height: '100vh', backgroundColor: '#f5f5f5' }}>
+              <div style={{ width: '60%', border: '2px solid #ccc', borderRadius: '5px', padding: '90px 80px', display: 'flex', backgroundColor: '#ececec' }}>
+                  <div >
+                      <img src={product.image} alt={product.name} style={{ maxWidth: '90%', height: 'auto', maxHeight: '250px', minHeight: '400px', minWidth: '400px', objectFit: 'cover' }} />
+                  </div>
+                  <div className='ml-20'>
+                      <h2 style={{ marginBottom: '20px', color: '#333', fontFamily: 'Poppins', fontSize: '35px' }}>{product.name}</h2>
+                      <p style={{ marginBottom: '10px', color: '#666', fontFamily: 'Arial, sans-serif', fontSize: '20px' }}>Price: ${product.price}</p>
+                      <p style={{ marginBottom: '20px', color: '#666', fontFamily: 'Arial, sans-serif', fontSize: '20px' }}>Quality: {product.quality}</p>
+                      <p style={{ marginBottom: '5px', color: '#333', fontFamily: 'Arial, sans-serif', fontSize: '20px' }}>Description: </p>
+                      <p style={{ marginBottom: '90px', color: '#666', fontFamily: 'Arial, sans-serif', fontSize: '20px',width:'500px' }}>{product.description}</p>
+                      <button style={{ display: 'flex',alignItems: 'center',padding: '18px 90px', backgroundColor: '#0000FF', color: 'white', border: 'none', borderRadius: '5px', cursor: 'pointer', fontSize: '18px' }} onClick={() => addToCart(product)}>
+                      <FaCartArrowDown style={{ marginRight: '20px' }} />
+                      Add to Cart 
+                     </button>
+                  </div>
+              </div>
+          </div>
+          <h1 style={{ color: '#333', fontFamily: 'Arial, sans-serif', fontSize: '30px', textAlign: 'center', textDecoration: 'underline', fontWeight: 'bold' }}>Similar product from different stores</h1>
 
-            <div className="flex justify-center items-center py-10 px-4">
-                <div className="bg-gray-200 border border-gray-400 rounded-lg flex flex-col lg:flex-row p-6 lg:p-10 w-full max-w-6xl">
-                    
-                    {/* Product Image */}
-                    <div className="flex justify-center items-center mb-8 lg:mb-0 lg:mr-10">
-                        <img
-                            src={product.image}
-                            alt={product.name}
-                            className="w-full max-w-[300px] h-auto lg:max-h-[400px] object-cover rounded-md"
-                        />
-                    </div>
-
-                    {/* Product Info */}
-                    <div className="flex-1">
-                        <h2 className="text-3xl font-bold text-gray-800 mb-4 font-poppins">{product.name}</h2>
-                        <p className="text-lg text-gray-700 mb-2">Price: ${product.price}</p>
-                        <p className="text-lg text-gray-700 mb-4">Quality: {product.quality}</p>
-                        <p className="text-lg text-gray-800 font-semibold mb-1">Description:</p>
-                        <p className="text-gray-700 text-base mb-6 max-w-lg">{product.description}</p>
-                        <button
-                            onClick={() => addToCart(product)}
-                            className="flex items-center justify-center bg-blue-600 hover:bg-blue-700 text-white font-semibold py-3 px-6 rounded-md transition duration-300 w-full sm:w-auto"
-                        >
-                            <FaCartArrowDown className="mr-3" />
-                            Add to Cart
-                        </button>
-                    </div>
-                </div>
-            </div>
-
-            <h1 className="text-center text-2xl sm:text-3xl font-bold text-gray-800 underline mt-10 mb-6">
-                Similar products from different stores
-            </h1>
-        </div>
-    );
+          </div>
+      );
+      
 }
