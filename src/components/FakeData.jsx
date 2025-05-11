@@ -2,7 +2,7 @@ export const shirtsData = [
     {
       id: 1,
       name: "Striped Cotton Shirt",
-      image: "https://via.placeholder.com/250",
+      image: "https://www.mytheresa.com/media/1094/1238/100/01/P00775896.jpg",
       price: "$29.99",
       store: "Fashion Express",
       quality: "Premium",
@@ -445,7 +445,7 @@ export const shirtsData = [
     {
       id: 59,
       name: "Jordan 4's",
-      image: "https://fastsole.co.uk/wp-content/uploads/2021/10/Air-Jordan-4-White-Tech-Grey-CU9981-100.jpg",
+      image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQhcJqBMIrUesTyW-3-ImmXvhYciNifyrXmFg&s",
       price: "$79.99",
       store: "Nike",
       quality: "standard",
