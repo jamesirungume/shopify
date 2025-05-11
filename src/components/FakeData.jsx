@@ -22,8 +22,8 @@ export const shirtsData = [
    
     {
       id: 3,
-      name: "Striped Cotton Shirt",
-      image: "https://via.placeholder.com/250",
+      name: " Casual Button-Down Shirt ",
+      image: "https://m.media-amazon.com/images/I/41qQzpvbDzL._AC_SR400,400_.jpg",
       price: "$29.99",
       store: "Fashion Express",
       quality: "premium",
@@ -41,8 +41,8 @@ export const shirtsData = [
     },
     {
       id: 5,
-      name: "Striped Cotton Shirt",
-      image: "https://via.placeholder.com/250",
+      name: "Polo T shirts",
+      image: "https://cdn.shopify.com/s/files/1/0266/6276/4597/files/301020475NAVY_1_800x.jpg?v=1746691659",
       price: "$29.99",
       store: "Fashion Express",
       quality: "Premium",
@@ -60,8 +60,8 @@ export const shirtsData = [
     },
     {
       id: 7,
-      name: "Striped Cotton Shirt",
-      image: "https://via.placeholder.com/250",
+      name: "Casual short sleeved shirt",
+      image: "https://m.media-amazon.com/images/I/41E5caLpQbL._SL500_.jpg",
       price: "$29.99",
       store: "Fashion Express",
       quality: "basic",
